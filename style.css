@@ -1,0 +1,202 @@
+.contacts {
+  display: flex;
+  justify-content: center; /* Aligns icons horizontally */
+  gap: 20px; /* Adds space between icons */
+  padding: 0px; /* Optional padding around the icons */
+}
+
+.contacts a img {
+  width: 40px; /* Sets icon size */
+  height: 40px;
+  transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+.contacts a img:hover {
+  transform: scale(1.2); /* Enlarges icons on hover */
+}
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+
+#caption {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100px;
+  margin: 10px;
+  border: 2px solid #000;
+  transition: opacity 0.3s ease-in-out; /* Adjust duration and easing function if necessary */
+}
+
+.project-image:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* General styling for images in project cards */
+.card img {
+  width: 100%; /* Make the image responsive */
+  max-width: 800px; /* Limit the max width for better layout */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Space between the images */
+  border: 2px solid #ddd; /* Add a border */
+  border-radius: 8px; /* Optional: rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.cardv2 img {
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Limit the max width for better layout */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Space between the images */
+  border: 2px solid #ddd; /* Add a border */
+  border-radius: 8px; /* Optional: rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+/* Center the card content */
+.card {
+  text-align: center; /* Center images and text */
+  margin-bottom: 40px; /* Space between projects */
+  padding: 20px;
+  border: 1px solid #ccc; /* Card border */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Card shadow */
+  background-color: #fafafa; /* Light background for contrast */
+}
+
+.card a {
+  color: gray; /* Initial color */
+  text-decoration: none;
+  font-size: 16px; /* Initial size */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.card a:hover {
+  color: black; /* Color change on hover */
+  transform: scale(1.01); /* Makes the link bigger */
+}
+
+/* Blurb styling */
+.blurb {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Layout adjustments for multiple images in a card */
+.card img + img {
+  margin-left: 15px; /* Space between images in a row */
+}
+
+.centered {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px; /* Maximum width for large screens */
+}
+
+@media (max-width: 768px) {
+  .card img {
+    max-width: 100%; /* Ensure images resize on smaller screens */
+    margin: 5px 0;
+  }
+  .card {
+    padding: 10px;
+  }
+}
+
+
+
+body {
+  min-width: 768px; /* Prevents the body from shrinking below 500px */
+  padding-bottom: 50px;
+}
+nav {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+a {
+  text-decoration: none;
+  color: gray;
+  display: inline-block;
+}
+.resume {
+  margin-top: 50px;
+}
+.navli {
+  margin: 0 30px;
+  
+}
+.navli a{
+  transition: transform 0.2s;
+}
+.navli.active a{
+  color: black;
+}
+.navli a:hover{
+  color: black;
+  transform: scale(1.1);
+}
+.centered{
+  text-align: center;
+}ht: 20px;
+} */
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack elements vertically when screen width is 768px or smaller */
+    text-align: center; /* Center-aligns the text */
+  }
+  .blurb{
+    padding: 20px;
+  }
+}
